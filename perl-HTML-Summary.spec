@@ -5,7 +5,7 @@ Summary:	HTML::Summary perl module
 Summary(pl):	Modu³ perla HTML::Summary
 Name:		perl-HTML-Summary
 Version:	0.017
-Release:	7
+Release:	8
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
