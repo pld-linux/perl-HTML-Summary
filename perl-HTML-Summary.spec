@@ -3,7 +3,7 @@ Summary:	HTML-Summary perl module
 Summary(pl):	Modu³ perla HTML-Summary
 Name:		perl-HTML-Summary
 Version:	0.017
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
