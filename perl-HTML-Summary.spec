@@ -28,7 +28,7 @@ Modu³ HTML::Summary tworzy podsumowania zawarto¶ci stron www.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
