@@ -5,8 +5,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	HTML
 %define	pnam	Summary
-Summary:	HTML::Summary Perl module
-Summary(pl):	Modu³ Perla HTML::Summary
+Summary:	HTML::Summary - module for generating a summary from a web page
+Summary(pl):	HTML::Summary - modu³ do generowania streszczeñ stron WWW
 Name:		perl-HTML-Summary
 Version:	0.017
 Release:	9
@@ -22,11 +22,14 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-HTML::Summary module produces summaries from the textual content of web
-pages.
+The HTML::Summary module produces summaries from the textual content of
+web pages. It does so using the location heuristic, which determines the
+value of a given sentence based on its position and status within the
+document; for example, headings, section titles and opening paragraph
+sentences may be favoured over other textual content. A LENGTH option
+can be used to restrict the length of the summary produced.
 
-%description -l pl
-Modu³ HTML::Summary tworzy podsumowania zawarto¶ci stron WWW.
+#%description -l pl
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
