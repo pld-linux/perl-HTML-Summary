@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	HTML
-%define	pnam	Summary
+%define		pdir	HTML
+%define		pnam	Summary
 Summary:	HTML::Summary - module for generating a summary from a web page
 Summary(pl):	HTML::Summary - modu³ do generowania streszczeñ stron WWW
 Name:		perl-HTML-Summary
