@@ -2,9 +2,9 @@
 Summary:	HTML-Summary perl module
 Summary(pl):	Modu³ perla HTML-Summary
 Name:		perl-HTML-Summary
-Version:	0.016
-Release:	3
-Copyright:	GPL
+Version:	0.017
+Release:	1
+License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/HTML/HTML-Summary-%{version}.tar.gz
@@ -30,11 +30,11 @@ make
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/usr/src/examples/%{name}-%{version}
+install -d $RPM_BUILD_ROOT/usr/src/examples/%{name}
 
 make install DESTDIR=$RPM_BUILD_ROOT
 
-install examples/* $RPM_BUILD_ROOT/usr/src/examples/%{name}-%{version}
+install examples/* $RPM_BUILD_ROOT/usr/src/examples/%{name}
 
 (
   cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/HTML/Summary
@@ -57,7 +57,7 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_sitelib}/Text/Sentence.pm
 %{perl_sitearch}/auto/HTML/Summary
 
-%dir /usr/src/examples/%{name}-%{version}
-%attr(755,root,root) /usr/src/examples/%{name}-%{version}/*.pl
+%dir /usr/src/examples/%{name}
+%attr(755,root,root) /usr/src/examples/%{name}/*.pl
 
 %{_mandir}/man3/*
