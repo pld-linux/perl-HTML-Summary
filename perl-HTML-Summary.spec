@@ -27,7 +27,7 @@ Modu³ HTML-Summary tworzy podsumowania zawarto¶ci stron www.
 
 %build
 perl Makefile.PL
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
