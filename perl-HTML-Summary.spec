@@ -3,7 +3,7 @@ Summary:	HTML-Summary perl module
 Summary(pl):	Modu³ perla HTML-Summary
 Name:		perl-HTML-Summary
 Version:	0.017
-Release:	3
+Release:	4
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
@@ -12,6 +12,7 @@ Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/HTML/HTML-Summary-%{versi
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-HTML-Tree
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
