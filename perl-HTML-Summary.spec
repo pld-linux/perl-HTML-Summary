@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	HTML
 %define	pnam	Summary
-Summary:	HTML-Summary perl module
-Summary(pl):	Modu³ perla HTML-Summary
+Summary:	HTML::Summary perl module
+Summary(pl):	Modu³ perla HTML::Summary
 Name:		perl-HTML-Summary
 Version:	0.017
 Release:	6
@@ -16,11 +16,11 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-HTML-Summary module produces summaries from the textual content of web
+HTML::Summary module produces summaries from the textual content of web
 pages.
 
 %description -l pl
-Modu³ HTML-Summary tworzy podsumowania zawarto¶ci stron www.
+Modu³ HTML::Summary tworzy podsumowania zawarto¶ci stron www.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
