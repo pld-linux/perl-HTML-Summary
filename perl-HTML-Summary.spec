@@ -15,8 +15,8 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # NoSource0-md5:	a7f29617a26a3f07b3f871751507d9ec
 NoSource:	0
-BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	perl-HTML-Tree
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -29,7 +29,13 @@ document; for example, headings, section titles and opening paragraph
 sentences may be favoured over other textual content. A LENGTH option
 can be used to restrict the length of the summary produced.
 
-#%description -l pl
+%description -l pl
+Modu³ HTML::Summary tworzy streszczenia z tekstowej zawarto¶ci stron
+WWW. Czyni to przy u¿yciu heurystyki po³o¿enia, okre¶laj±cej warto¶æ
+danego zdania w oparciu o po³o¿enie i status w dokumencie; na przyk³ad
+nag³ówki, tytu³y sekcji i zdania zaczynaj±ce akapity mog± byæ
+preferowane w stosunku do reszty tre¶ci. Mo¿na u¿yæ opcji LENGTH do
+ograniczenia d³ugo¶ci tworzonego streszczenia.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
