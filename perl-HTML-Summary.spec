@@ -13,7 +13,7 @@ BuildRequires:	perl >= 5.005_03-14
 BuildRequires:	perl-HTML-Tree
 %requires_eq	perl
 Requires:	%{perl_sitearch}
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 HTML-Summary module produces summaries from the textual content of web pages.
