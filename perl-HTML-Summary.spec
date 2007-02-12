@@ -6,7 +6,7 @@
 %define		pdir	HTML
 %define		pnam	Summary
 Summary:	HTML::Summary - module for generating a summary from a web page
-Summary(pl):	HTML::Summary - modu≥ do generowania streszczeÒ stron WWW
+Summary(pl.UTF-8):   HTML::Summary - modu≈Ç do generowania streszcze≈Ñ stron WWW
 Name:		perl-HTML-Summary
 Version:	0.017
 Release:	9
@@ -29,13 +29,13 @@ document; for example, headings, section titles and opening paragraph
 sentences may be favoured over other textual content. A LENGTH option
 can be used to restrict the length of the summary produced.
 
-%description -l pl
-Modu≥ HTML::Summary tworzy streszczenia z tekstowej zawarto∂ci stron
-WWW. Czyni to przy uøyciu heurystyki po≥oøenia, okre∂laj±cej warto∂Ê
-danego zdania w oparciu o po≥oøenie i status w dokumencie; na przyk≥ad
-nag≥Ûwki, tytu≥y sekcji i zdania zaczynaj±ce akapity mog± byÊ
-preferowane w stosunku do reszty tre∂ci. Moøna uøyÊ opcji LENGTH do
-ograniczenia d≥ugo∂ci tworzonego streszczenia.
+%description -l pl.UTF-8
+Modu≈Ç HTML::Summary tworzy streszczenia z tekstowej zawarto≈õci stron
+WWW. Czyni to przy u≈ºyciu heurystyki po≈Ço≈ºenia, okre≈õlajƒÖcej warto≈õƒá
+danego zdania w oparciu o po≈Ço≈ºenie i status w dokumencie; na przyk≈Çad
+nag≈Ç√≥wki, tytu≈Çy sekcji i zdania zaczynajƒÖce akapity mogƒÖ byƒá
+preferowane w stosunku do reszty tre≈õci. Mo≈ºna u≈ºyƒá opcji LENGTH do
+ograniczenia d≈Çugo≈õci tworzonego streszczenia.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
