@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	HTML
 %define		pnam	Summary
+%include	/usr/lib/rpm/macros.perl
 Summary:	HTML::Summary - module for generating a summary from a web page
 Summary(pl.UTF-8):	HTML::Summary - moduł do generowania streszczeń stron WWW
 Name:		perl-HTML-Summary
@@ -15,6 +15,7 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # NoSource0-md5:	a7f29617a26a3f07b3f871751507d9ec
 NoSource:	0
+URL:		http://search.cpan.org/dist/HTML-Summary/
 BuildRequires:	perl-HTML-Tree
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -22,12 +23,13 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-The HTML::Summary module produces summaries from the textual content of
-web pages. It does so using the location heuristic, which determines the
-value of a given sentence based on its position and status within the
-document; for example, headings, section titles and opening paragraph
-sentences may be favoured over other textual content. A LENGTH option
-can be used to restrict the length of the summary produced.
+The HTML::Summary module produces summaries from the textual content
+of web pages. It does so using the location heuristic, which
+determines the value of a given sentence based on its position and
+status within the document; for example, headings, section titles and
+opening paragraph sentences may be favoured over other textual
+content. A LENGTH option can be used to restrict the length of the
+summary produced.
 
 %description -l pl.UTF-8
 Moduł HTML::Summary tworzy streszczenia z tekstowej zawartości stron
@@ -54,7 +56,7 @@ install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-install examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+cp -p examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
