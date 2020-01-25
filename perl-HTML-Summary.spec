@@ -4,7 +4,6 @@
 
 %define		pdir	HTML
 %define		pnam	Summary
-%include	/usr/lib/rpm/macros.perl
 Summary:	HTML::Summary - module for generating a summary from a web page
 Summary(pl.UTF-8):	HTML::Summary - moduł do generowania streszczeń stron WWW
 Name:		perl-HTML-Summary
